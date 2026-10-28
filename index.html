@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jared Schneider Portfolio</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Jared Schneider — gameplay programmer working in Unreal Engine (C++ / Blueprint) and Unity (C#).">
+<meta property="og:title" content="Jared Schneider — Gameplay Programmer">
+<meta property="og:description" content="Unreal C++ / Blueprint and Unity C#. Gameplay systems, enemy AI, multiplayer.">
+<meta property="og:image" content="assets/posters/fruitricide.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800;900&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav__inner">
+    <a class="nav__mark" href="#top" aria-label="Jared Schneider, back to top">JS</a>
+    <nav aria-label="Sections">
+      <a href="#work">Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ===================== HERO / REEL ===================== -->
+  <section class="reel" aria-label="Gameplay reel">
+    <div class="reel__stage">
+      <video class="reel__video is-on" muted playsinline preload="auto" aria-hidden="true"></video>
+      <video class="reel__video" muted playsinline preload="auto" aria-hidden="true"></video>
+      <div class="reel__shade"></div>
+    </div>
+
+    <div class="wrap reel__content">
+      <h1 class="reel__name">Jared<br>Schneider</h1>
+      <p class="reel__role">Gameplay programmer. I design and build games end to end in Unreal Engine 5 (C++ and Blueprint) and Unity (C#).</p>
+      <div class="reel__cta">
+        <a class="btn btn--solid" href="#work">See the games</a>
+        <a class="btn" href="mailto:schneiderj4067@gmail.com">Email me</a>
+      </div>
+    </div>
+
+    <!-- VOD-style scrubber: one segment per clip, click to jump -->
+    <div class="wrap">
+      <ol class="scrub" aria-label="Reel chapters"></ol>
+    </div>
+  </section>
+
+  <!-- ===================== FEATURED WORK ===================== -->
+  <section id="work" class="section">
+    <div class="wrap">
+      <div class="section__head">
+        <h2>Featured games</h2>
+      </div>
+
+      <div class="grid">
+
+        <!-- CARD: Fruitricide (case study) -->
+        <article class="card card--wide" data-skills="unity csharp gameplay data-driven ui" id="p-fruitricide">
+          <div class="card__media">
+            <video muted loop playsinline preload="none" poster="assets/posters/fruitricide.jpg" src="assets/video/loops/fruitricide.mp4"></video>
+            <span class="engine engine--unity">Unity</span>
+          </div>
+          <div class="card__body">
+            <h3>Fruitricide</h3>
+            <p class="card__meta">Top-down arena shooter roguelike for Brackeys Game Jam 2024.2</p>
+            <p class="card__hook">Survive ten waves of enemies that grow faster and more numerous each round. Pick up new weapons, level up between fights and hold the arena until the last wave falls.</p>
+            <ul class="tags" aria-label="Tech stack"><li>Unity</li><li>C#</li><li>ScriptableObjects</li></ul>
+            <div class="card__links">
+              <button class="btn btn--solid" type="button" data-case="fruitricide">Read the case study</button>
+              <a class="btn" href="https://itch.io/jam/brackeys-12/rate/2973302" target="_blank" rel="noopener">Play on itch.io</a>
+              <button class="btn btn--ghost" type="button" data-trailer="fruitricide" data-title="Fruitricide">Full clip</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD: Something Is In The Woods (files use id "cabin") -->
+        <article class="card" data-skills="unreal blueprint cpp gameplay ai animation ui" id="p-cabin">
+          <div class="card__media">
+            <video muted loop playsinline preload="none" poster="assets/posters/cabin.jpg" src="assets/video/loops/cabin.mp4"></video>
+            <span class="engine engine--unreal">Unreal</span>
+          </div>
+          <div class="card__body">
+            <h3>Something Is In The Woods</h3>
+            <p class="card__meta">First-person horror for GameDev.tv Halloween Game Jam</p>
+            <p class="card__hook">A night in the woods with only a flashlight, and something hunting you. Enemy AI runs on Behavior Trees, with animation state machines and an interaction system for doors, keys and pickups.</p>
+            <ul class="tags" aria-label="Tech stack"><li>Unreal Engine 5</li><li>Blueprint</li><li>C++</li><li>Behavior Trees</li></ul>
+            <div class="card__links">
+              <a class="btn btn--solid" href="https://loljss.itch.io/something-is-in-the-woods" target="_blank" rel="noopener">Play on itch.io</a>
+              <button class="btn btn--ghost" type="button" data-trailer="cabin" data-title="Something Is In The Woods">Full clip</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD: Tanks -->
+        <article class="card" data-skills="unreal cpp blueprint gameplay" id="p-tanks">
+          <div class="card__media">
+            <video muted loop playsinline preload="none" poster="assets/posters/tanks.jpg" src="assets/video/loops/tanks.mp4"></video>
+            <span class="engine engine--unreal">Unreal</span>
+          </div>
+          <div class="card__body">
+            <h3>Tank Arena</h3>
+            <p class="card__meta">Top-down tank combat · PC</p>
+            <p class="card__hook">Turret-vs-turret combat with destructible cover. Aim, fire and break walls apart under shellfire while enemy tanks close in.</p>
+            <ul class="tags" aria-label="Tech stack"><li>Unreal Engine 5</li><li>C++</li><li>Blueprint</li></ul>
+            <div class="card__links">
+              <button class="btn btn--ghost" type="button" data-trailer="tanks" data-title="Tank Arena">Full clip</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD: Jumping -->
+        <article class="card" data-skills="unreal cpp blueprint gameplay" id="p-jumping">
+          <div class="card__media">
+            <video muted loop playsinline preload="none" poster="assets/posters/jumping.jpg" src="assets/video/loops/jumping.mp4"></video>
+            <span class="engine engine--unreal">Unreal</span>
+          </div>
+          <div class="card__body">
+            <h3>Prop Hop</h3>
+            <p class="card__meta">Third-person platformer · PC</p>
+            <p class="card__hook">Leap across pallets, crates and flying porta-potties. A third-person platformer built around tight, readable jumping and moving physics props.</p>
+            <ul class="tags" aria-label="Tech stack"><li>Unreal Engine 5</li><li>C++</li><li>Blueprint</li></ul>
+            <div class="card__links">
+              <button class="btn btn--ghost" type="button" data-trailer="jumping" data-title="Prop Hop">Full clip</button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Smaller "more work" row -->
+      <h3 class="more__title">More projects</h3>
+      <div class="more">
+        <button class="mini" type="button" data-trailer="dungeon" data-title="Dungeon Escape" data-skills="unreal level">
+          <span class="mini__media">
+            <video muted loop playsinline preload="none" poster="assets/posters/dungeon.jpg" src="assets/video/loops/dungeon.mp4"></video>
+          </span>
+          <span class="mini__text"><strong>Dungeon Escape</strong><span>Unreal Engine 5 dungeon with torch-lit environments</span></span>
+        </button>
+        <button class="mini" type="button" data-trailer="galaga" data-title="Galaga remake" data-skills="unity csharp gameplay">
+          <span class="mini__media">
+            <video muted loop playsinline preload="none" poster="assets/posters/galaga.jpg" src="assets/video/loops/galaga.mp4"></video>
+          </span>
+          <span class="mini__text"><strong>Galaga remake</strong><span>Unity arcade shooter with formation-flying enemy waves</span></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS MATRIX ===================== -->
+  <section id="skills" class="section section--alt">
+    <div class="wrap">
+      <div class="section__head">
+        <h2>Skills and tools</h2>
+        <p class="section__lede">Pick a skill to see which projects use it.</p>
+      </div>
+
+      <div class="matrix" role="group" aria-label="Skills">
+        <div class="matrix__col">
+          <h3>Engines</h3>
+          <button class="chip" data-skill="unreal" aria-pressed="false"><i class="dot dot--unreal"></i>Unreal Engine</button>
+          <button class="chip" data-skill="unity" aria-pressed="false"><i class="dot dot--unity"></i>Unity</button>
+        </div>
+        <div class="matrix__col">
+          <h3>Languages</h3>
+          <button class="chip" data-skill="cpp" aria-pressed="false">C++</button>
+          <button class="chip" data-skill="csharp" aria-pressed="false">C#</button>
+          <button class="chip" data-skill="blueprint" aria-pressed="false">Blueprint</button>
+          <button class="chip" data-skill="python" aria-pressed="false">Python</button>
+          <button class="chip" data-skill="c" aria-pressed="false">C</button>
+        </div>
+        <div class="matrix__col">
+          <h3>Disciplines</h3>
+          <button class="chip" data-skill="gameplay" aria-pressed="false">Gameplay systems</button>
+          <button class="chip" data-skill="ai" aria-pressed="false">Enemy AI · Behavior Trees</button>
+          <button class="chip" data-skill="animation" aria-pressed="false">Movement &amp; animation</button>
+          <button class="chip" data-skill="multiplayer" aria-pressed="false">Multiplayer netcode</button>
+          <button class="chip" data-skill="data-driven" aria-pressed="false">Data-driven design</button>
+          <button class="chip" data-skill="ui" aria-pressed="false">UI / UX</button>
+          <button class="chip" data-skill="level" aria-pressed="false">Lighting &amp; level dressing</button>
+        </div>
+        <div class="matrix__col">
+          <h3>Tools &amp; data</h3>
+          <button class="chip" data-skill="git" aria-pressed="false">Git</button>
+          <button class="chip" data-skill="linux" aria-pressed="false">Linux</button>
+          <button class="chip" data-skill="gcp" aria-pressed="false">Google Cloud</button>
+          <button class="chip" data-skill="opencv" aria-pressed="false">OpenCV</button>
+          <button class="chip" data-skill="mongodb" aria-pressed="false">MongoDB</button>
+        </div>
+      </div>
+
+      <div class="matrix__out" aria-live="polite">
+        <p class="matrix__hint">Nothing selected. Every project is shown.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT / MATCH HISTORY ===================== -->
+  <section id="about" class="section">
+    <div class="wrap about">
+      <div class="about__intro">
+        <img class="about__photo" src="assets/img/jared.jpg" alt="Jared Schneider smiling on a lookout above Los Angeles" width="640" height="800" loading="lazy">
+        <h2>About</h2>
+        <p>I'm a gameplay programmer based in Santa Monica with a B.S. in Computer Science from Southern Illinois University Edwardsville. I build games in Unreal Engine 5 and Unity, and I've shipped jam games in both.</p>
+        <p>Games have been part of my life for as long as I can remember. They taught me how to compete, led me into coaching, and eventually pointed me toward computer science. Now I want to give players what games have given me: something worth mastering, people to share it with, and moments they're still talking about the next day.</p>
+        <p>I spent two years as head coach of a League of Legends team in North American Challengers League and reached top ranks across several competitive games. That shapes how I work: I playtest constantly, pay close attention to how a game feels moment to moment, and I'm comfortable giving and receiving direct feedback on a team.</p>
+
+        <h3 class="ranks__title">Peak ranks</h3>
+        <ul class="ranks">
+          <li><b>Rank 1</b><span>Omega Strikers, global</span></li>
+          <li><b>Grandmaster</b><span>League of Legends, 410 LP</span></li>
+          <li><b>Rank 8</b><span>PUBG NA FPP solo</span></li>
+          <li><b>Ascendant 3</b><span>Valorant</span></li>
+          <li><b>Legend</b><span>Hearthstone</span></li>
+          <li><b>Global Elite</b><span>Counter-Strike</span></li>
+        </ul>
+      </div>
+
+      <div class="history">
+        <h3 class="history__title">Experience</h3>
+        <ol class="history__list">
+          <li class="match">
+            <time>2026</time>
+            <div>
+              <h4>Unreal Engine 5 projects</h4>
+              <p>Four demos in C++ and Blueprint. Built a reusable multiplayer plugin for session management and matchmaking, Behavior Tree enemy AI, and client-side prediction with server-side rewind.</p>
+            </div>
+          </li>
+          <li class="match">
+            <time>2026</time>
+            <div>
+              <h4>GameDev.tv Halloween Game Jam · Something Is In The Woods</h4>
+              <p>First-person horror in Unreal Engine 5 with Behavior Tree enemy AI. <a href="https://loljss.itch.io/something-is-in-the-woods" target="_blank" rel="noopener">Play it on itch.io</a></p>
+            </div>
+          </li>
+          <li class="match match--win">
+            <time>2024</time>
+            <div>
+              <h4>Brackeys Game Jam 2024.2 · Fruitricide</h4>
+              <p>Solo entry. Top 27% for Fun out of 1,501 submissions.</p>
+            </div>
+          </li>
+          <li class="match">
+            <time>May 2024</time>
+            <div>
+              <h4>B.S. Computer Science · SIUE</h4>
+              <p>Southern Illinois University Edwardsville.</p>
+            </div>
+          </li>
+          <li class="match match--win">
+            <time>2022 – 2024</time>
+            <div>
+              <h4>Head Coach · Return of the Middlesticks (NACL)</h4>
+              <p>Led a team of five Challenger players. Beat seeding every split, from 18th seed to 7th place. 80% of the roster hit new peak ranks.</p>
+            </div>
+          </li>
+          <li class="match">
+            <time>2022 – 2023</time>
+            <div>
+              <h4>Closed playtester · Omega Strikers</h4>
+              <p>One of about 50 high-rank players invited to give monthly QA and design feedback to the developers.</p>
+            </div>
+          </li>
+          <li class="match">
+            <time>2021 – 2023</time>
+            <div>
+              <h4>Software Developer · Macrohard</h4>
+              <p>Python client-server app pulling the Riot Games API into MongoDB and live OBS broadcast graphics. OpenCV heatmaps across 1,000+ games. Used by 4 Riot pro tournaments and 17 leagues.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact" class="section section--contact">
+    <div class="wrap contact">
+      <h2>Looking for a gameplay programmer?</h2>
+      <p class="section__lede">I'm open to full-time roles and contract work. Email is the fastest way to reach me.</p>
+      <div class="contact__mail">
+        <a class="contact__addr" href="mailto:schneiderj4067@gmail.com">schneiderj4067@gmail.com</a>
+        <button class="btn" type="button" id="copy-email">Copy email</button>
+      </div>
+      <ul class="socials">
+        <li><a href="https://www.linkedin.com/in/jaredschn/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://loljss.itch.io" target="_blank" rel="noopener">itch.io</a></li>
+        <!-- Add GitHub / X / resume here when ready, same format as above -->
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">Jared Schneider · Santa Monica, CA · Built by hand, no frameworks.</div>
+</footer>
+
+<!-- ===================== TRAILER MODAL ===================== -->
+<dialog class="modal modal--video" id="trailer" aria-label="Gameplay clip">
+  <div class="modal__bar">
+    <strong class="modal__title">Clip</strong>
+    <button class="modal__close" type="button" data-close>Close</button>
+  </div>
+  <video controls playsinline preload="none"></video>
+</dialog>
+
+<!-- ===================== CASE STUDY MODAL ===================== -->
+<dialog class="modal modal--case" id="case-fruitricide" aria-labelledby="case-title">
+  <div class="modal__bar">
+    <strong>Case study</strong>
+    <button class="modal__close" type="button" data-close>Close</button>
+  </div>
+  <article class="case">
+    <header class="case__head">
+      <h2 id="case-title">Fruitricide</h2>
+      <p>Solo developer · Unity / C# · Built in one week for Brackeys Game Jam 2024.2</p>
+    </header>
+
+    <video class="case__video" muted loop playsinline autoplay poster="assets/posters/fruitricide.jpg" data-src="assets/video/loops/fruitricide.mp4"></video>
+
+    <dl class="case__stats">
+      <div><dt>Submissions</dt><dd>1,501</dd></div>
+      <div><dt>Fun rating</dt><dd>3.2 / 5</dd></div>
+      <div><dt>Fun placement</dt><dd>Top 27%</dd></div>
+    </dl>
+
+    <section>
+      <h3>What I built</h3>
+      <p>Everything in the build is mine: design, code and tuning. The parts I'd point a lead programmer at:</p>
+      <ul>
+        <li>A ScriptableObject content pipeline. Weapons, items and enemies are data assets, so adding a new weapon is a new asset, not new code.</li>
+        <li>Orbiting melee weapons that stack. Each knife, fork or spoon picked up joins the ring around the player and deals damage on contact.</li>
+        <li>A ten-wave director with a countdown timer, telegraphed spawn rings and scaling enemy mixes.</li>
+        <li>Progression: XP orbs, level-ups, currency and health, all surfaced in a minimal HUD.</li>
+      </ul>
+    </section>
+
+    <!-- DRAFT: the challenges and optimizations below are written from what the footage shows.
+         Replace them with what you actually did and measured. -->
+    <section>
+      <h3>Challenges solved</h3>
+      <ul>
+        <li><b>Content at jam speed.</b> With seven days, I couldn't hand-wire every weapon. Defining stats and behaviour in ScriptableObjects let me tune and add content from the Inspector in minutes.</li>
+        <li><b>Readable chaos.</b> Late waves put dozens of enemies, projectiles and damage numbers on screen. Spawn telegraphs and color-coded pickups keep the player able to read the fight.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Performance</h3>
+      <ul>
+        <li>Object pooling for enemies, projectiles, XP orbs and damage numbers, so late waves don't stall on instantiation and garbage collection.</li>
+        <li>Simple distance checks instead of physics queries for orbiting-weapon hits.</li>
+      </ul>
+    </section>
+
+    <div class="case__links">
+      <a class="btn btn--solid" href="https://itch.io/jam/brackeys-12/rate/2973302" target="_blank" rel="noopener">Play on itch.io</a>
+      <button class="btn" type="button" data-trailer="fruitricide" data-title="Fruitricide">Full clip with sound</button>
+    </div>
+  </article>
+</dialog>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
